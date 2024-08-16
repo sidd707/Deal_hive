@@ -1,0 +1,655 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+
+{% block banner-slider %}
+<section class="home" id="home">
+  <div class="content">
+    <h3>Come explore india with us</h3>
+    <p>discover new places with us, with their unique products</p>
+    <a href="#" class="btn"> Explore</a>
+    <a href="#" class="btn">Shop Now</a>
+  </div>
+  <div class="controls">
+    <span class="vid-btn active" data-src="{% static 'assets/images/vid-5.mp4' %}"></span>
+    <span class="vid-btn" data-src="{% static 'assets/images/vid-2.mp4' %}"></span>
+    <span class="vid-btn" data-src="{% static 'assets/images/vid-3.mp4' %}"></span>
+    <span class="vid-btn" data-src="{% static 'assets/images/vid-4.mp4' %}"></span>
+  </div>
+  <div class="video-container">
+    <video
+      src="{% static 'assets/images/vid-5.mp4' %}"
+      id="video-slider"
+      loop
+      autoplay
+      muted
+    ></video>
+  </div>
+</section>
+{% endblock banner-slider %}
+
+{% block information %}
+    
+
+<section class="book" id="book">
+  <h1 class="heading">
+    <span>w</span>
+    <span>h</span>
+    <span>y</span>
+    <!-- <span></span> -->
+    <span class="space"></span>
+    <span>c</span>
+    <span>h</span>
+    <span>o</span>
+    <span>o</span>
+    <span>s</span>
+    <span>e</span>
+    <span class="space"></span>
+    <span>u</span>
+    <span>s</span>
+  </h1>
+
+  
+  <!-- Start Why Choose Us Section -->
+<div class="why-choose-section">
+  <div class="container">
+    <div class="row justify-content-between">
+      <div class="col-lg-6">
+        <h1 class="section-title">Why Choose Us</h1>
+        <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique.</p>
+
+        <div class="row my-5">
+          <div class="col-6 col-md-6">
+            <div class="feature">
+              <div class="icon">
+                <img src="{% static 'assets/images/truck.svg' %}" alt="Image" class="imf-fluid">
+              </div>
+              <h3>Fast &amp; Free Shipping</h3>
+              <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-6">
+            <div class="feature">
+              <div class="icon">
+                <img src="{% static 'assets/images/bag.svg' %}" alt="Image" class="imf-fluid">
+              </div>
+              <h3>Easy to Shop</h3>
+              <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-6">
+            <div class="feature">
+              <div class="icon">
+                <img src="{% static 'assets/images/support.svg' %}" alt="Image" class="imf-fluid">
+              </div>
+              <h3>24/7 Support</h3>
+              <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-6">
+            <div class="feature">
+              <div class="icon">
+                <img src="{% static 'assets/images/return.svg' %}" alt="Image" class="imf-fluid">
+              </div>
+              <h3>Hassle Free Returns</h3>
+              <p>Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="col-lg-5">
+        <div class="img-wrap">
+          <img src="{% static 'assets/images/image1ind.png' %}" alt="Image" class="img-fluid">
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- End Why Choose Us Section -->
+  </div>
+</section>
+{% endblock information %}
+
+{% block main-content %}
+<section class="packages" id="packages">
+  <h1 class="heading">
+    <span>p</span>
+    <span>r</span>
+    <span>o</span>
+    <span>d</span>
+    <span>u</span>
+    <span>c</span>
+    <span>t</span>
+    <span>s</span>
+  </h1>
+
+  <div class="box-container">
+    
+    <div class="parent card3">
+      <div class="card">
+          <img class="card-image" src="{% static 'assets/images/products/kashmiri-apple.jpg' %}" alt="Card Image" width="320" height="200">
+          <div class="content-box">
+              <h1 class="card-title">Kashmiri Apple</h1>
+              <p class="card-content">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sequi illo nam repudiandae tempore quaerat veritatis doloremque omnis molestias id.
+              </p>
+              <!-- <span class="see-more">buy now</span> -->
+              <span class="see-more">add to cart</span>
+          </div>
+          <div class="date-box">
+              <span class="month">PRICE</span>
+              <span class="date">290</span>
+          </div>
+      </div>
+  </div>
+  <div class="parent card3">
+    <div class="card">
+        <img class="card-image" src="{% static 'assets/images/products/saffron.jpg' %}" alt="Card Image" width="320" height="200">
+        <div class="content-box">
+            <h1 class="card-title">Kashmiri saffron</h1>
+            <p class="card-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sequi illo nam repudiandae tempore quaerat veritatis doloremque omnis molestias id.
+            </p>
+            <!-- <span class="see-more">buy now</span> -->
+            <span class="see-more">add to cart</span>
+        </div>
+        <div class="date-box">
+            <span class="month">PRICE</span>
+            <span class="date">2000</span>
+        </div>
+    </div>
+</div>
+
+<div class="parent card3">
+  <div class="card">
+      <img class="card-image" src="{% static 'assets/images/products/kerala-coconut.jpg' %}" alt="Card Image" width="320" height="200">
+      <div class="content-box">
+          <h1 class="card-title">Kerala coconut</h1>
+          <p class="card-content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sequi illo nam repudiandae tempore quaerat veritatis doloremque omnis molestias id.
+          </p>
+          <!-- <span class="see-more">buy now</span> -->
+          <span class="see-more">add to cart</span>
+      </div>
+      <div class="date-box">
+          <span class="month">PRICE</span>
+          <span class="date">20</span>
+      </div>
+  </div>
+</div>
+
+<div class="parent card3">
+<div class="card">
+    <img class="card-image" src="{% static 'assets/images/products/Rajasthan-bangle.jpg' %}" alt="Card Image" width="320" height="200">
+    <div class="content-box">
+        <h1 class="card-title">rajasthan bangles</h1>
+        <p class="card-content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sequi illo nam repudiandae tempore quaerat veritatis doloremque omnis molestias id.
+        </p>
+        <!-- <span class="see-more">buy now</span> -->
+        <span class="see-more">add to cart</span>
+    </div>
+    <div class="date-box">
+        <span class="month">PRICE</span>
+        <span class="date">220</span>
+    </div>
+</div>
+</div>
+
+<div class="parent card3">
+<div class="card">
+  <img class="card-image" src="{% static 'assets/images/products/Assam-mugga-silk.jpg' %}" alt="Card Image" width="320" height="200">
+  <div class="content-box">
+      <h1 class="card-title">Assammuggasilk</h1>
+      <p class="card-content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sequi illo nam repudiandae tempore quaerat veritatis doloremque omnis molestias id.
+      </p>
+      <!-- <span class="see-more">buy now</span> -->
+      <span class="see-more">add to cart</span>
+  </div>
+  <div class="date-box">
+      <span class="month">PRICE</span>
+      <span class="date">3000</span>
+  </div>
+</div>
+</div>
+
+<div class="parent card3">
+<div class="card">
+  <img class="card-image" src="{% static 'assets/images/products/kolapuri-sadals.jpg' %}" alt="Card Image" width="320" height="200">
+  <div class="content-box">
+      <h1 class="card-title">Kashmiri Apple</h1>
+      <p class="card-content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere sequi illo nam repudiandae tempore quaerat veritatis doloremque omnis molestias id.
+      </p>
+      <!-- <span class="see-more">buy now</span> -->
+      <span class="see-more">add to cart</span>
+  </div>
+  <div class="date-box">
+      <span class="month">PRICE</span>
+      <span class="date">290</span>
+  </div>
+</div>
+</div>
+  </div>
+</section>
+<section class="review" id="review">
+  <h1 class="heading">
+    <span>t</span>
+    <span>e</span>
+    <span>s</span>
+    <span>t</span>
+    <span>i</span>
+    <span>m</span>
+    <span>o</span>
+    <span>n</span>
+    <span>i</span>
+    <span>a</span>
+    <span>l</span>
+  </h1>
+  <div class="swiper-container review-slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="box">
+          <img
+            src="{% static 'assets/images/user/user1.jpg' %}"
+            alt=""
+          />
+          <h3>Deepanshu Singh</h3>
+          <p>
+            Idea seems novel , implementation gonna take some time but there is a demand for a nationalised e-commerce site
+          </p>
+
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="box">
+          <img
+            src="{% static '{ % static ' %}'assets/images/user/user2.jpg' % } "
+            alt=""
+          />
+          <h3>Varun</h3>
+          <p>
+            Its a good initiative but its gonna have to either competit with ondc or integrate it
+          </p>
+          
+          
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="box">
+          <img
+            src="{% static 'assets/images/user/user3.jpg' %} " 
+            alt=""
+          />
+          <h3>Ayush</h3>
+          <p>
+            Main issue would be designing a scalable and easy to understand ux ,if thats solved then its gonna be very useful
+          </p>
+          
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="box">
+          <img
+            src="{% static 'assets/images/user/user4.jpg' %}"
+            alt=""
+          />
+          <h3>Sivakumar</h3>
+          <p>
+            Every drop similarly counts to the ocean, if every state showcases its skills in the product that it makes, there are buyers in the market who are mesmerised by the level of precision and creativity shown in the product.
+          </p>
+
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="gallery" id="gallery">
+  <h1 class="heading">
+    <span>r</span>
+    <span>e</span>
+    <span>c</span>
+    <span>e</span>
+    <span>n</span>
+    <span>t</span>
+    <span class="space"></span>
+    <span>b</span>
+    <span>l</span>
+    <span>o</span>
+    <span>g</span>
+  </h1>
+  <div class="box-container">
+    <div class="box">
+      <img
+        src="{% static 'assets/images/Gallery/Gallery-1.jpg' %}"
+        alt=""
+      />
+      <div class="content">
+        <h3>Maldives  Paradise</h3>
+        <p>Escape to the maldives, crystal-clear waters, and luxurious resorts await. </p>
+        
+        <a href="#" class="btn">see more</a>
+      </div>
+    </div>
+    <div class="box">
+      <img
+        src="{% static 'assets/images/Gallery/Gallery-2.jpg' %}"
+        alt=""
+      />
+      <div class="content">
+        <h3>Tibet Monasteries</h3>
+        <p>
+          Embark on a journey to he wotions, including the serene beauty of Buddhist monasteries.
+        </p>
+        <a href="#" class="btn">see more</a>
+      </div>
+    </div>
+    <div class="box">
+      <img
+        src="{% static 'assets/images/Gallery/Gallery-3.jpg' %}"
+        alt=""
+      />
+      <div class="content">
+        <h3>Italy Countryside</h3>
+        <p>
+          Dis colorful old town in It streets, rich culture, and picturesque architecture.
+        </p>
+        <a href="#" class="btn">see more</a>
+      </div>
+    </div>
+    <div class="box">
+      <img
+        src="{% static 'assets/images/Gallery/Gallery-4.jpg' %}"
+        alt=""
+      />
+      <div class="content">
+        <h3>Russian castle</h3>
+        <p>
+          Step into the enchanting world ofr, intricate architecture, and rich heritage.
+        </p>
+        <a href="#" class="btn">see more</a>
+      </div>
+    </div>
+    <div class="box">
+      <img
+        src="{% static 'assets/images/Gallery/Gallery-5.jpg' %}"
+        alt=""
+      />
+      <div class="content">
+        <h3>Private Paradise</h3>
+        <p>Escape to the lap of luled beauty, exclusive amenities, and pure tranquility.</p>
+        <a href="#" class="btn">see more</a>
+      </div>
+    </div>
+    <div class="box">
+      <img
+        src="{% static 'assets/images/Gallery/Gallery-6.jpg' %}"
+        alt=""
+      />
+      <div class="content">
+        <h3>Explore Castle</h3>
+        <p>Travel back in time andstoric castle nestled in the picturesque UK countryside. </p>
+        <a href="#" class="btn">see more</a>
+      </div>
+    </div>
+    <div class="box">
+      <img
+        src="{% static 'assets/images/Gallery/Gallery-7.jpg' %}"
+        alt=""
+      />
+      <div class="content">
+        <h3>Discover Pisa</h3>
+        <p>Experience the architectu its unique design, historical significance, and iconic lean.</p>
+
+        <a href="#" class="btn">see more</a>
+      </div>
+    </div>
+    <div class="box">
+      <img
+        src="{% static 'assets/images/Gallery/Gallery-8.jpg' %}"
+        alt=""
+      />
+      <div class="content">
+        <h3>Venice</h3>
+        <p>Set sail on the picturesque canransport you to a world of romance and beauty.</p>
+        <a href="#" class="btn">see more</a>
+      </div>
+    </div>
+    <div class="box">
+      <img
+        src="{% static 'assets/images/Gallery/Gallery-9.jpg' %}"
+        alt=""
+      />
+      <div class="content">
+        <h3>Enter World</h3>
+        <p>Step into the enchanting realm othat await you in this fairy tale setting.</p>
+
+        <a href="#" class="btn">see more</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="review" id="review">
+  <h1 class="heading">
+    <span>S</span>
+    <span>C</span>
+    <span>H</span>
+    <span>E</span>
+    <span>M</span>
+    <span>E</span>
+    <span>S</span>
+  </h1>
+  <div class="swiper-container review-slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="box">
+          <img
+            src="{% static 'assets/images/schemes/MODI.jpg' %}"
+            alt=""
+          />
+          <h3>Shri Narendra Modi</h3>
+          <p>
+            I had an amazing experience with this service. Highly recommended!
+          </p>
+
+          
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="box">
+          <img
+          src="{% static 'assets/images/schemes/LION.jpg' %}"
+            alt=""
+
+          />
+          <h3>Ashoka Statue</h3>
+          <p>
+            I had an awesome time with this service. It was a breeze, and the staff was wonderful. Highly recommended for a great experience!
+          </p>
+          
+          
+         
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="box">
+          <img
+          src="{% static 'assets/images/schemes/LOTUS.jpg' %}"
+            alt=""
+          />
+          <h3>JK</h3>
+          <p>
+            My journey with this service was delightful. Every moment was a pleasure, and the staff was fantastic. A top-notch experience!
+          </p>
+          
+          
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="box">
+          <img
+          src="{% static 'assets/images/schemes/AAJADI.jpg' %}"
+            alt=""
+          />
+          <h3>Aajadi ka Mahotsav</h3>
+          <p>
+            My experience was fantastic! From start to finish, it was a breeze, and I couldn't be happier. Highly recommended for an enjoyable journey!
+          </p>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="brand-container">
+  <!--  -->
+  <h1 class="heading">
+    <span>p</span>
+    <span>a</span>
+    <span>r</span>
+    <span>t</span>
+    <span>n</span>
+    <span>e</span>
+    <span>r</span>
+    <span>s</span>
+  </h1>
+  <!--  -->
+  <div class="swiper-container brand-slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="box">
+        <img
+          src="{% static 'assets/images/partner/partner1.jpg' %}"
+          alt=""/>
+          <h3>Switch</h3>
+      </div>
+    </div>
+        <div class="swiper-slide">
+        <div class="box">
+        <img
+          src="{% static 'assets/images/partner/partner2.jpg' %}"
+          alt=""/>
+          <h3>Github</h3>
+        </div>
+      </div>
+        <div class="swiper-slide">
+        <div class="box">
+        <img
+          src="{% static 'assets/images/partner/partner3.jpg' %}"
+          alt=""/>
+          <h3>Ferrari</h3>
+        </div>
+      </div>
+        <div class="swiper-slide">
+        <div class="box">
+        <img
+          src="{% static 'assets/images/partner/partner4.jpg' %}"
+          alt=""/>
+          <h3>Akatsuki</h3>
+        </div>
+      </div>
+        <div class="swiper-slide">
+        <div class="box">
+        <img
+          src="{% static 'assets/images/partner/partner5.jpg' %}"
+          alt=""/>
+          <h3>Batman</h3>
+        </div>
+      </div>
+        <div class="swiper-slide">
+        <div class="box">
+        <img
+          src="{% static 'assets/images/partner/partner6.jpg' %}"
+          alt=""/>
+          <h3>Arc Linux</h3>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="footer">
+  <div class="box-container">
+    <div class="box">
+      <h3>About Us</h3>
+      <p>
+        At ODOP bharat, we are a dedicated team for enthusiasts sellers who share their passion for delivering exceptional products experiences. With over a decade of collective expertise, our team is committed to providing you with the highest level of service in the ecommerce industry.
+      </p>
+      
+    </div>
+    <div class="box">
+      <h3>branch location</h3>
+      <a href="index.html">india</a>
+      <a href="index.html">USA</a>
+      <a href="index.html">france</a>
+      <a href="index.html">japan</a>
+    </div>
+    <div class="box">
+      <h3>quick links</h3>
+      <a href="#home">home</a>
+      <a href="#book">book</a>
+      <a href="#packages">packages</a>
+      <a href="#services">services</a>
+      <a href="#gallery">gallery</a>
+      <a href="#review">review</a>
+      <a href="#contact">contact</a>
+    </div>
+    <div class="box">
+      <h3>follow us</h3>
+      <a href="https://www.facebook.com">facebook</a>
+      <a href="https://www.instagram.com">instagram</a>
+      <a href="https://twitter.com">twitter</a>
+      <a href="https://www.linkedin.com/">linkedin</a>
+    </div>
+  </div>
+  <h1 class="credit">created by <span>Shift+delete</span>| all rights reserved!</h1>
+</section>
+
+{% endblock main-content %}
+
+  
+    

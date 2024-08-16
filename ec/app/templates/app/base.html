@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+ {% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> -->
+    
+    <link rel="stylesheet" href="{% static 'app/css/owl.carousel.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'app/css/all.min.css' %}" />
+    <!-- <link rel="stylesheet" href="{% static 'app/css/style.css' %}" /> -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
+    <link href="{% static 'assets/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <title>ODOP  | {% 
+    {% block title %}
+        
+    {% endblock title %}
+        %}</title>
+        
+      <style>
+        /* Navbar Brand */
+.navbar-brand img {
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.bg-danger {
+    --bs-bg-opacity: 1;
+    background-color: rgba(0, 0, 0, 1) !important; /* Change to black color */
+}
+
+
+/* Navbar Toggler Icon */
+.navbar-toggler-icon {
+    background-color: white;
+    
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Active Link */
+.navbar-nav .nav-link.active {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    border: none;
+    border-radius: 0;
+    background-color: #0b0a0a; /* Adjust color as needed */
+}
+
+.dropdown-menu a.dropdown-item {
+    color: white;
+    padding: 8px 20px;
+    font-size: 16px;
+}
+
+.dropdown-menu a.dropdown-item:hover {
+    background-color: #2331c8; /* Adjust color as needed */
+}
+
+/* Search Form */
+.navbar form {
+    margin-right: 20px;
+}
+
+/* Profile Dropdown */
+#profileDropdown.dropdown-menu {
+    border: none;
+    border-radius: 0;
+    background-color: #dc3545; /* Adjust color as needed */
+}
+
+#profileDropdown.dropdown-menu a.dropdown-item {
+    color: white;
+}
+
+#profileDropdown.dropdown-menu a.dropdown-item:hover {
+    background-color: #c82333; /* Adjust color as needed */
+}
+
+      </style>
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger">    <!--we can use primary also-->
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+    <img src="{% static 'app/images/banner/logo1.jpg' %}" width="100" height="55"/>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            States
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{% url 'category' 'FC' %}">jammu & kashmir</a></li>
+            <li><a class="dropdown-item" href="{% url 'category' 'FOC' %}">uttrakhand</a></li>
+            <li><a class="dropdown-item" href="{% url 'category' 'SC' %}">kerala</a></li>
+            <li><a class="dropdown-item" href="{% url 'category' 'CC' %}">uttar pradesh</a></li>
+            <li><a class="dropdown-item" href="{% url 'category' 'SPC' %}">sikkim</a></li>
+            <li><a class="dropdown-item" href="{% url 'category' 'MC' %}">assam</a></li>
+            <li><a class="dropdown-item" href="{% url 'category' 'EC' %}">Andhra pradesh</a></li>
+            <li><a class="dropdown-item" href="{% url 'category' 'TCC' %}">rajasthan</a></li>
+            <li><a class="dropdown-item" href="{% url 'category' 'ZSC' %}">tamil nadu</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Districts
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">kashmir</a></li>
+            <li><a class="dropdown-item" href="#">bikaner</a></li>
+            <li><a class="dropdown-item" href="#">jaipur</a></li>
+            <li><a class="dropdown-item" href="#">gb nagar</a></li>
+            <li><a class="dropdown-item" href="#">jaisalmer</a></li>
+            <li><a class="dropdown-item" href="#">madurai</a></li>
+            <li><a class="dropdown-item" href="#">jodhpur</a></li>
+            <li><a class="dropdown-item" href="#">dharamshala</a></li>
+            <li><a class="dropdown-item" href="#">dalhousie</a></li>
+            <li><a class="dropdown-item" href="#">pori</a></li>
+            
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="{% url 'about' %}">About Us</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link text-white" href="#">Join us</a>
+        </li> -->
+        <li class="nav-item">
+          <a class="nav-link text-white" href="{% url 'contact' %}">Contact us</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+    <ul class=" navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item dropdown mx-2">
+        <a class="nav-link dropdown-toggle text-white" href="#" 
+        id="profileDropdown" role="button" data-bs-toggle="dropdown" 
+        aria-expanded="false">User</a>
+        <ul class="dropdown-menu" aria-labelledby="profileDropdown">
+            <li><a class="dropdown-item" href ="#" >Profile</a></li>
+            <li><a class="dropdown-item" href ="#" >Orders</a></li>
+            <li><a class="dropdown-item" href ="#" >Change Password</a></li>
+            <li><a class="dropdown-item" href ="#" >Logout</a></li>
+        </ul>
+    </li>
+    <li class="nav-item mx-2">
+    <a herf="#" class="nav-link text-white">Cart 4</a>
+    </li>
+    <li class="nav-item mx-2">
+    <a herf="#" class="nav-link text-white">WishList 4</a>
+    </li>
+    <li class="nav-item mx-2">
+    <a herf="#" class="nav-link text-white">Login</a>
+    </li>
+    <li class="nav-item mx-2">
+    <a href="{% url 'customerregistration' %}" class="nav-link text-white">Registration</a>
+    </li>
+
+
+   </ul>
+   </div>
+</nav>
+
+
+{% block banner-slider %}{% endblock banner-slider %}
+
+{% block information %}{% endblock information %}
+    
+{% block main-content %}{% endblock main-content %}
+
+<footer class="container-fluid bg-primary fixed-bottom text-white text-center p-2 mt-5">
+Copywright : 2023 || developed by : Siddharth Patel
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<script script="{% static 'app/js/owl.carousel.min.js' %}" ></script>
+<script script="{% static 'app/js/all.min.js' %}" ></script>
+<script script="{% static 'app/js/myscript.js' %}" ></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<!-- <script src="{% static 'assets/js/script.js'  % }"></script> -->
+    <!-- <script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script> -->
+		<script src="{% static 'assets/js/tiny-slider.js' %}"></script>
+		<script src="{% static 'assets/js/custom.js' %}"></script>
+
+    <script src="{% static 'app/js/script.js'  % }"></script>
+    
+
+
+</body>
+</html>
